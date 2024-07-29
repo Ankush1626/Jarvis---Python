@@ -1,6 +1,5 @@
 import speech_recognition as sr
 import webbrowser
-import pyttsx3
 import musicLibrary
 import requests
 # from openai import OpenAI
@@ -9,12 +8,7 @@ import pygame
 import os
 
 recogizer = sr.Recognizer()
-engine = pyttsx3.init()
 newsapi = "YOUR NEWS API"
-
-def speak_old(text):
-    engine.say(text)
-    engine.runAndWait()
 
 def speak(text): 
     tts = gTTS(text)
